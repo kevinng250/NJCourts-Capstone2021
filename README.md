@@ -2,6 +2,18 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Environment Variable
+
+You need to create .env file in your project root directory (where package.json is located) and add following variables:
+```
+REACT_APP_ACCESS_ID="AWS_USER_ACCESS_ID"
+REACT_APP_ACCESS_KEY="AWS_USER_ACCESS_KEY"
+REACT_APP_BUCKET_NAME="BUCKET_NAME_WHERE_YOU_WANT_YOUR_FILES"
+REACT_APP_REGION="AWS_REGION_WHERE_YOUR_BUCKET_LOCATED"
+```
+
+In the project directory, you can run:
+
 ## Available Scripts
 
 In the project directory, you can run:
