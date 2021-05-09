@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "5mZnQ/wgkOnaE/4sSvYgQbFMb91UCn3twTr4x/HQLCRFspIZZWuXrSfAssgvC2XghF9JysdAMRvnFVGjIK0vgg==",
+  "success": true,
+  "projectFilePath": "/Users/kevin/Documents/Projects/ICAPVirusScanning/VirusScan/src/VirusScan/VirusScan.csproj",
+  "expectedPackageFiles": [
+    "/Users/kevin/.nuget/packages/amazon.lambda.core/1.2.0/amazon.lambda.core.1.2.0.nupkg.sha512",
+    "/Users/kevin/.nuget/packages/amazon.lambda.serialization.systemtextjson/2.1.0/amazon.lambda.serialization.systemtextjson.2.1.0.nupkg.sha512",
+    "/Users/kevin/.nuget/packages/awssdk.core/3.7.0.12/awssdk.core.3.7.0.12.nupkg.sha512",
+    "/Users/kevin/.nuget/packages/awssdk.s3/3.7.0.13/awssdk.s3.3.7.0.13.nupkg.sha512",
+    "/Users/kevin/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

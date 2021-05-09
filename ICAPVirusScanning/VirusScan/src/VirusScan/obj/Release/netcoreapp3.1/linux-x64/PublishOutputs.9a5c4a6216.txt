@@ -1,0 +1,9 @@
+/Users/kevin/Documents/Projects/ICAPVirusScanning/VirusScan/src/VirusScan/bin/Release/netcoreapp3.1/publish/VirusScan.dll
+/Users/kevin/Documents/Projects/ICAPVirusScanning/VirusScan/src/VirusScan/bin/Release/netcoreapp3.1/publish/VirusScan.deps.json
+/Users/kevin/Documents/Projects/ICAPVirusScanning/VirusScan/src/VirusScan/bin/Release/netcoreapp3.1/publish/VirusScan.runtimeconfig.json
+/Users/kevin/Documents/Projects/ICAPVirusScanning/VirusScan/src/VirusScan/bin/Release/netcoreapp3.1/publish/VirusScan.pdb
+/Users/kevin/Documents/Projects/ICAPVirusScanning/VirusScan/src/VirusScan/bin/Release/netcoreapp3.1/publish/Amazon.Lambda.Core.dll
+/Users/kevin/Documents/Projects/ICAPVirusScanning/VirusScan/src/VirusScan/bin/Release/netcoreapp3.1/publish/Amazon.Lambda.Serialization.SystemTextJson.dll
+/Users/kevin/Documents/Projects/ICAPVirusScanning/VirusScan/src/VirusScan/bin/Release/netcoreapp3.1/publish/AWSSDK.Core.dll
+/Users/kevin/Documents/Projects/ICAPVirusScanning/VirusScan/src/VirusScan/bin/Release/netcoreapp3.1/publish/AWSSDK.S3.dll
+/Users/kevin/Documents/Projects/ICAPVirusScanning/VirusScan/src/VirusScan/bin/Release/netcoreapp3.1/publish/Newtonsoft.Json.dll
