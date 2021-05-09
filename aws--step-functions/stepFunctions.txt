@@ -1,0 +1,81 @@
+{
+  "Comment": "A Hello World example of the Amazon States Language using Pass states",
+  "StartAt": "ChoiceState",
+  "States": {
+    "ChoiceState": {
+      "Type": "Choice",
+      "Choices": [
+        {
+          "Variable": "$.selectedOptions.stripMetaData",
+          "NumericEquals": 1,
+          "Next": "stripMetaData"
+        },
+        {
+          "Variable": "$.selectedOptions.convertDocument",
+          "NumericEquals": 1,
+          "Next": "convertDocument"
+        },
+        {
+          "Variable": "$.selectedOptions.textract",
+          "NumericEquals": 1,
+          "Next": "textractProcesses"
+        }
+      ],
+      "Default": "SuccessState"
+    },
+     "stripMetaData": {
+    "Type": "Task",
+    "Resource": "arn:aws:lambda:us-east-1:810635616067:function:TriggerStripMetadata",
+    "Catch": [
+      {
+        "ErrorEquals": [
+          "States.ALL"
+        ],
+        "ResultPath": "$.error-info",
+        "Next": "ErrorState1"
+      }
+    ],
+    "Next": "ChoiceState"
+    },
+    "convertDocument": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:us-east-1:810635616067:function:File_Conversion_2_PDFA",
+      "Catch": [
+        {
+          "ErrorEquals": [
+            "States.ALL"
+          ],
+          "ResultPath": "$.error-info",
+          "Next": "ErrorState1"
+        }
+      ],
+      "Next": "ChoiceState"
+    },
+        "textractProcesses": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:us-east-1:810635616067:function:StartTextractProcesses",
+      "Catch": [
+        {
+          "ErrorEquals": [
+            "States.ALL"
+          ],
+          "ResultPath": "$.error-info",
+          "Next": "ErrorState1"
+        }
+      ],
+      "Next": "ChoiceState"
+    },
+    "SuccessState": {
+      "Type": "Pass",
+      "Result": "Success",
+      "ResultPath": "$.status",
+      "End": true
+    },
+    "ErrorState1": {
+      "Type": "Pass",
+      "Result": "Failure",
+      "ResultPath": "$.status",
+      "End": true
+    }
+  }
+}
